@@ -1,0 +1,4 @@
+.button {
+    margin: calc(var(--stdMargin)/3);
+    color: rgba(255, 255, 255, 0.87);
+}

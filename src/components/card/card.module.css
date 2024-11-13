@@ -38,13 +38,9 @@
     display: flex;
     justify-content: flex-start;
     width: 100%;
+    gap: var(--std-padding);
 }
 
 .textWrapper {
     text-align: left;
-}
-
-.button {
-    margin: calc(var(--stdMargin)/3);
-    color: rgba(255, 255, 255, 0.87);
 }

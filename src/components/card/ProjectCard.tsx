@@ -1,7 +1,8 @@
 import { IProject } from '../../content/projects';
 import styles from './card.module.css';
+import { PButton } from '../button/Button'
 
-export interface CardProps extends IProject {};
+export interface CardProps extends IProject { };
 
 export const ProjectCard = ({
     title,
@@ -18,19 +19,17 @@ export const ProjectCard = ({
                     <h3>{title}</h3>
                     <p>{description}</p>
                 </div>
-                
+
                 <div className={styles.buttonWrapper}>
                     {/* Link to the App */}
-                    <button className={styles.button} onClick={(e) => {
-                        e.preventDefault();
-                        window.open(appUrl, '_blank');
-                    }}>View</button>
+                    <PButton action={() => window.open(appUrl, '_blank')}>
+                        View
+                    </PButton>
 
                     {/* Link to the code */}
-                    <button className={styles.button} onClick={(e) => {
-                        e.preventDefault();
-                        window.open(codeUrl, '_blank');
-                    }}>Code</button>
+                    <PButton action={() => window.open(codeUrl, '_blank')}>
+                        Code
+                    </PButton>
                 </div>
 
             </div>
