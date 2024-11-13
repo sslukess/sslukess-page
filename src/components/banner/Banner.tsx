@@ -37,7 +37,9 @@ export function Banner() {
                 <img className={styles.image} src="/luke.png" />
             </div>
 
-            
+            {/* Name */}
+
+            <h2>Luke Sampson Searle</h2>
 
             {/* Bio */}
             <div className={styles.bioWrapper}>

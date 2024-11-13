@@ -52,7 +52,7 @@ export const TopBar = () => {
 
     return (
         <header className={styles.topBar}>
-            <NameWrapper name="LUKE SAMPSON SEARLE" />
+            {/* <NameWrapper name="LUKE SAMPSON SEARLE" /> */}
             <nav className={styles.topLinks}>
                 {linkArray.map((link, index) => <TopLink link={link} key={index}/>)}
             </nav>

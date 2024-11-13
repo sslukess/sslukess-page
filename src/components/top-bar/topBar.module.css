@@ -5,6 +5,7 @@
     left: 0;
     z-index: 10;
     position: sticky;
+    padding-bottom: 20px;
 
     /* color */
     background-color: var(--background-color);
