@@ -27,7 +27,7 @@
 }
 
 /* Creates banding */
-.appWrapper > section:nth-child(odd) {
+.appWrapper > main > section:nth-child(even) {
   background-color: var(--background-band-color);
 }
 

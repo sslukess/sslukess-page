@@ -4,12 +4,13 @@ import styles from './button.module.css';
 
 interface IPButtonProps {
     action: () => void;
+    className?: string;
 };
 
-export function PButton({ action, children }: PropsWithChildren<IPButtonProps>){
+export function PButton({ action, className, children }: PropsWithChildren<IPButtonProps>){
     
     return(
-        <button className={styles.button} onClick={(e) => {
+        <button className={styles.button + " " + className} onClick={(e) => {
             e.preventDefault();
             action() // call action
         }}>
