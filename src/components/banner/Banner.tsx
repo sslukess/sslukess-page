@@ -1,6 +1,8 @@
 import { FilledBio } from '../content-section/bio/bio'
 import { PButton } from '../button/Button'
 
+import { email, phoneNumber } from '../../content/contact'
+
 import styles from './banner.module.css'
 
 function scrollToSection(id: string) {
@@ -35,6 +37,8 @@ export function Banner() {
                 <img className={styles.image} src="/luke.png" />
             </div>
 
+            
+
             {/* Bio */}
             <div className={styles.bioWrapper}>
                 <FilledBio />
@@ -58,6 +62,10 @@ export function Banner() {
                     Skills
                 </PButton>
             </div>
+
+            {/* Contact */}
+            <span>e: {email}</span>
+            <span>ph: {phoneNumber}</span>
         </div>
     );
 }
