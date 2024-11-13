@@ -7,6 +7,7 @@ export interface IPreviousJob {
     yearFrom: string;
     yearTo: string;
     description: string;
+    location: string;
 }
 
 const PreviousJob = ({
@@ -14,19 +15,20 @@ const PreviousJob = ({
     employer,
     yearFrom,
     yearTo,
-    description
+    description,
+    location
 }: IPreviousJob) => {
 
     return (
         <li className={styles.jobBullet}>
             <div className={styles.titleWrapper}>
-                <h3>{title}</h3>
+                <h3 className={styles.title}>{title}</h3>
+                <h3 className={styles.employer}><span className={styles.at}>{" "}@</span> <em>{employer}</em></h3> 
             </div>
-            <em>{yearFrom} - {yearTo}</em> @ <em className={styles.employer}>{employer}</em>
+            <em>{yearFrom} - {yearTo}</em><em className={styles.location}> | {location}</em>
             <p>{description}</p>
         </li>
     )
-
 };
 
 export const PreviousJobs = () => {
@@ -35,4 +37,4 @@ export const PreviousJobs = () => {
             {previousJobs.map((job, index) => <PreviousJob {...job} key={index}/>)}
         </ul>
     )
-}
+};
