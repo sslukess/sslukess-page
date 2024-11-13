@@ -1,11 +1,25 @@
 .titleWrapper {
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
+    gap: 10px;
+}
+
+.title {
     text-decoration: underline;
+}
 
-    ::before {
+.at {
+    font-weight: bold;
+    color: aquamarine;
+    text-shadow: 2px 2px 0px purple;
+    
+}
 
-    }
+.title, 
+.educator {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .educator {
@@ -18,4 +32,5 @@
 
 .eduList {
     padding-left: var(--stdPadding);
+    border-bottom: 3px solid #ffffff14;
 }

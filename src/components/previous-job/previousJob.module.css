@@ -1,21 +1,37 @@
 .titleWrapper {
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
-    text-decoration: underline;
-
-    ::before {
-
-    }
+    gap: 10px;
 }
 
-.employer {
+.title {
+    text-decoration: underline;
+}
+
+.at {
     font-weight: bold;
+    color: aquamarine;
+    text-shadow: 2px 2px 0px purple;
+    
+}
+
+.title, 
+.employer {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .jobBullet {
     list-style-type: "📌 ";
+    margin-top: 35px;
+    border-bottom: 3px solid #ffffff14;
 }
 
 .jobList {
     padding-left: var(--stdPadding);
+}
+
+.location {
+
 }

@@ -7,6 +7,7 @@ export interface IEducation {
     yearFrom: string;
     yearTo: string;
     description: string;
+    location: string;
 }
 
 const Education = ({
@@ -14,17 +15,19 @@ const Education = ({
     educator,
     yearFrom,
     yearTo,
-    description
+    description,
+    location
 }: IEducation) => {
 
     return (
         <li className={styles.eduBullet}>
-            <div className={styles.titleWrapper}>
-                <h3>{title}</h3>
-            </div>
-            <em>{yearFrom} - {yearTo}</em> @ <em className={styles.educator}>{educator}</em>
-            <p>{description}</p>
-        </li>
+        <div className={styles.titleWrapper}>
+            <h3 className={styles.title}>{title}</h3>
+            <h3 className={styles.educator}><span className={styles.at}>{" "}@</span> <em>{educator}</em></h3> 
+        </div>
+        <em>{yearFrom} - {yearTo}</em><em className={styles.location}> | {location}</em>
+        <p>{description}</p>
+    </li>
     )
 
 };
