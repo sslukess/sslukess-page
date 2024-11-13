@@ -16,7 +16,7 @@ export function ContentSection({
 
     return (
         <section className={style.contentSection + " " + (banner ? style.banner : "")}>
-            <h2>{heading}</h2>
+            <h2 id={heading?.replace(" ", "")}>{heading}</h2>
             <em>{decoration}</em>
             {children}
         </section>

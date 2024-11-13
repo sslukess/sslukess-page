@@ -3,8 +3,28 @@ import { PButton } from '../button/Button'
 
 import styles from './banner.module.css'
 
-export function Banner() {
+function scrollToSection(id: string) {
 
+    const target = document.getElementById(id) ?? null;
+    const header = document.querySelector('header'); // The class or id of your sticky header
+
+    // if (target) {
+    //     target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    // }
+
+    if (target) {
+        const headerOffset = header ? header.offsetHeight : 0; // Get the height of the sticky header
+        const targetPosition = target.getBoundingClientRect().top + window.scrollY - headerOffset - 20;
+
+        window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+        });
+    }
+}
+
+
+export function Banner() {
 
     return (
         <div className={styles.bannerContent}>
@@ -22,19 +42,19 @@ export function Banner() {
 
             {/*  Buttons  */}
             <div className={styles.buttonWrapper}>
-                <PButton className={styles.button} action={() => console.log("hello")}>
-                    Work Experience
+                <PButton className={styles.button} action={() => scrollToSection("WorkHistory")}>
+                    Work History
                 </PButton>
 
-                <PButton className={styles.button} action={() => console.log("hello")}>
+                <PButton className={styles.button} action={() => scrollToSection("Projects")}>
                     Projects
                 </PButton>
 
-                <PButton className={styles.button} action={() => console.log("hello")}>
+                <PButton className={styles.button} action={() => scrollToSection("Education")}>
                     Education
                 </PButton>
 
-                <PButton className={styles.button} action={() => console.log("hello")}>
+                <PButton className={styles.button} action={() => scrollToSection("Skills")}>
                     Skills
                 </PButton>
             </div>
