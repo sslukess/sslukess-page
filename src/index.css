@@ -2,13 +2,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 :root {
+  /* Global Vars to use in other CSS Sheets */
+  --stdPadding: 1rem;
+  --stdMargin: 1rem;
+
+  /* Global Vars for color */
+  --background-color: #171832;
+  --background-band-color: #1a1b39;
+
   font-family: 'Roboto Mono', monospace;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: var(--background-color);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -16,9 +24,11 @@
   -moz-osx-font-smoothing: grayscale;
   width: 100%;
 
-  /* Global Vars to use in other CSS Sheets */
-  --stdPadding: 1rem;
-  --stdMargin: 1rem;
+}
+
+/* Creates banding */
+.appWrapper > section:nth-child(odd) {
+  background-color: var(--background-band-color);
 }
 
 a {

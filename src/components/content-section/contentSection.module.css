@@ -2,3 +2,7 @@
     padding: var(--stdPadding);
 
 }
+
+.banner {
+    height: 70vh;
+}

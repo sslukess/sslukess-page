@@ -10,9 +10,9 @@ export function NameWrapper({ name, children }: PropsWithChildren<NameWrapperPro
 
     return (
         <div className={styles.nameContainer} >
-            <h1 className={styles.name}>
+            <p className={styles.name}>
                 {name}
-            </h1>
+            </p>
             {children}
         </div>
     )

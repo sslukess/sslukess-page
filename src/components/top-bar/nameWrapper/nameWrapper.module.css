@@ -1,13 +1,18 @@
 .nameContainer {
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
-    flex: 1 1 auto;
-    padding: var(--stdPadding);
+    flex: 0 1 auto;
     text-wrap: wrap;
 }
 
 .name { 
     margin: 0px;
-    text-decoration: underline;
+    font-size: 1.5rem;
+    padding-left: var(--stdPadding);
+
+    @media (max-width: 450px) {
+        padding-left: 0;
+
+    }
 }
