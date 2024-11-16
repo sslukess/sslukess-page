@@ -32,13 +32,13 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    flex: 0 1 auto;
+    flex: 0 0 100%;
 }
 
 .topLink {
     display: flex;
-    flex: 1 1 auto;
-    font-size: 1.5rem;
+    justify-content: center;
+    flex: 0 1 10%;
     padding: var(--stdPadding);
     padding-bottom: 0px;
     transition: 0.3s;

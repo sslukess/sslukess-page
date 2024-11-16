@@ -1,5 +1,4 @@
 import styles from './topBar.module.css'
-import { NameWrapper } from './nameWrapper/nameWrapper';
 
 import { email } from '../../content/contact'
 

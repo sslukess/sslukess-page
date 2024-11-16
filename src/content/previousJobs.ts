@@ -37,7 +37,7 @@ const instandaConfigAnalyst: IPreviousJob = {
 };
 
 const instandaPreSales: IPreviousJob = { 
-    title: "Sales Engineer (Technical Presales Manager)",
+    title: "Sales Engineer",
     employer: "INSTANDA", 
     yearFrom: "March, 2024", 
     yearTo: "Present",

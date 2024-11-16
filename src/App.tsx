@@ -29,9 +29,9 @@ function App() {
           <Banner />
         </ContentSection>
 
-        {/* <ContentSection heading="Bio">
-          <FilledBio />
-        </ContentSection> */}
+        <ContentSection heading={"Projects"} decoration={`${mobile ? "scroll! ->" : ""}`}>
+          <ScrollingBox />
+        </ContentSection>
 
         <ContentSection heading="Work History">
           <PreviousJobs />
@@ -39,10 +39,6 @@ function App() {
 
         <ContentSection heading="Education">
           <Educations />
-        </ContentSection>
-
-        <ContentSection heading={"Projects"} decoration={`${mobile ? "scroll! ->" : ""}`}>
-          <ScrollingBox />
         </ContentSection>
 
         <ContentSection heading="Skills">
