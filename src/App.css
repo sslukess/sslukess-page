@@ -1,3 +1,23 @@
+:root {
+
+  /* Fonts */
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+  font-weight: var(--line-weight);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Colors */
+  background-color: var(--background-color);
+  color-scheme: light dark;
+  color: var(--color-light);
+
+  /* Spacing */
+  width: 100%;
+}
+
 .appWrapper {
   max-width: 1500px;
   margin: auto;
@@ -6,4 +26,26 @@
 /* Creates banding */
 .appWrapper > main > section:nth-child(odd) {
   background-color: var(--background-band-color);
+}
+
+
+a {
+  font-weight: 500;
+  color: var(--accent-color-primary);
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: lighten; 
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
 }

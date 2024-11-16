@@ -13,7 +13,7 @@ button {
 }
 
 button:hover {
-    border-color: purple;
+    border-color: var(--accent-color-secondary);
 }
 
 button:focus,

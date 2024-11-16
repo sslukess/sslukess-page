@@ -42,12 +42,12 @@
     padding: var(--stdPadding);
     padding-bottom: 0px;
     transition: 0.3s;
-    text-shadow: 2px 2px 0px purple;
+    text-shadow: 2px 2px 0px var(--accent-color-secondary);
 
     &:hover {
         padding-bottom: 3px;
         padding-top: 13px;
-        text-shadow: 2px 2px 1px purple;
+        text-shadow: 2px 2px 1px var(--accent-color-secondary);
     }
 }
 

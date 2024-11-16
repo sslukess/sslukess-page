@@ -17,7 +17,7 @@
 }
 
 .button {
-    background-color: aquamarine;
+    background-color: var(--accent-color-primary);
     color: black;
 }
 

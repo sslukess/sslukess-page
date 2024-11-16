@@ -1,6 +1,6 @@
 .card {
     padding: var(--stdPadding);
-    background-color: #386d9b;
+    background-color: var(--accent-color-tertiary);
     margin: 8px;
     border-radius: 8px;
 
@@ -31,7 +31,7 @@
         flex: 0 0 calc(100%);
     }
 
-    box-shadow: 3px 3px 1px purple;
+    box-shadow: 3px 3px 1px var(--accent-color-secondary);
 }
 
 .buttonWrapper {

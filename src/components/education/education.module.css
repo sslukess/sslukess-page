@@ -11,8 +11,8 @@
 
 .at {
     font-weight: bold;
-    color: aquamarine;
-    text-shadow: 2px 2px 0px purple;
+    color: var(--accent-color-primary);
+    text-shadow: 2px 2px 0px var(--accent-color-secondary);
     
 }
 

@@ -17,6 +17,10 @@ function ThemeVariablesSheet( { theme }: { theme: Theme }) {
         /* Colors */
         --background-color: ${theme.colors.backgroundDark};
         --background-band-color: ${theme.colors.backgroundDarkBanded};
+        --accent-color-primary: ${theme.colors.accentColorPrimary};
+        --accent-color-secondary: ${theme.colors.accentColorSecondary};
+        --accent-color-tertiary: ${theme.colors.accentColorTertiary};
+
 
         /* Spacing */
         --stdPadding: ${theme.spacing.standardPadding};

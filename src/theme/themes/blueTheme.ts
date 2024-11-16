@@ -7,7 +7,7 @@ const blueTheme: Theme = {
         backgroundDarkBanded: "#1a1b39",
         accentColorPrimary: "#65c696",
         accentColorSecondary: "purple",
-        accentColorTertiery: "#386d9b"
+        accentColorTertiary: "#386d9b"
 
     },
 

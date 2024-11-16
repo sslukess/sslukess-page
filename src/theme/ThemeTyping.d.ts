@@ -4,7 +4,7 @@ interface Theme {
         backgroundDarkBanded: string;
         accentColorPrimary: string;
         accentColorSecondary: string;
-        accentColorTertiery: string;
+        accentColorTertiary: string;
     };
     spacing: {
         standardPadding: string;
