@@ -13,6 +13,11 @@ import { useWindowWide } from './lib/hooks/useWindowSize'
 
 // Styles
 import './App.css'
+import ThemeVariablesSheet from './theme/themeVariablesSheet';
+import { createPortal } from 'react-dom';
+// themes
+import {blueTheme} from './theme/themes/blueTheme';
+
 
 function App() {
 
@@ -21,33 +26,39 @@ function App() {
   const mobile = !useWindowWide(480);
 
   return (
-    <div className="appWrapper">
-      <TopBar />
+    <>
+      {/* Inserts theme  */}
+      {createPortal(
+        <ThemeVariablesSheet theme={blueTheme} />, 
+        document.head)}
+      <div className="appWrapper">
+        <TopBar />
 
-      <main>
-        <ContentSection banner>
-          <Banner />
-        </ContentSection>
+        <main>
+          <ContentSection banner>
+            <Banner />
+          </ContentSection>
 
-        <ContentSection heading={"Projects"} decoration={`${mobile ? "scroll! ->" : ""}`}>
-          <ScrollingBox />
-        </ContentSection>
+          <ContentSection heading={"Projects"} decoration={`${mobile ? "scroll! ->" : ""}`}>
+            <ScrollingBox />
+          </ContentSection>
 
-        <ContentSection heading="Work History">
-          <PreviousJobs />
-        </ContentSection>
+          <ContentSection heading="Work History">
+            <PreviousJobs />
+          </ContentSection>
 
-        <ContentSection heading="Education">
-          <Educations />
-        </ContentSection>
+          <ContentSection heading="Education">
+            <Educations />
+          </ContentSection>
 
-        <ContentSection heading="Skills">
-          <Skills />
-        </ContentSection>
+          <ContentSection heading="Skills">
+            <Skills />
+          </ContentSection>
 
-        <Footer />
-      </main>
-    </div>
+          <Footer />
+        </main>
+      </div>
+    </>
   )
 }
 

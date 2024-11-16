@@ -2,3 +2,8 @@
   max-width: 1500px;
   margin: auto;
 }
+
+/* Creates banding */
+.appWrapper > main > section:nth-child(odd) {
+  background-color: var(--background-band-color);
+}
