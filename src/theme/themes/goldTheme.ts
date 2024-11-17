@@ -26,8 +26,8 @@ const goldTheme: Theme = {
         fontFamily: "'Roboto Mono', monospace",
         lineHeight: 1.5,
         fontWeight: 400,
-        colorPrimary: "dark blue",
-        colorSecondary: "dark blue"
+        colorPrimary: "#202020",
+        colorSecondary: "#202020"
     }
 };
 

@@ -13,25 +13,31 @@
     font-weight: bold;
     color: var(--accent-color-primary);
     text-shadow: 2px 2px 0px var(--accent-color-secondary);
-    
+
 }
 
-.title, 
-.employer {
+.title,
+.organisation {
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.jobBullet {
+.expBullet {
+    margin: 35px 40px;
+    border-bottom: 3px solid var(--color-primary);
+}
+
+.JobBullet {
     list-style-type: "📌 ";
-    margin-top: 35px;
-    border-bottom: 3px solid #ffffff14;
 }
 
-.jobList {
+.EducationBullet {
+    list-style-type: "📚 ";
+}
+
+.expList {
     padding-left: var(--stdPadding);
+    align-self: stretch;
 }
 
-.location {
-
-}
+.location {}

@@ -1,6 +1,13 @@
 .contentSection { 
     padding: var(--stdPadding);
-
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    
+    h2 {
+        
+        text-align: center;
+    }
 }
 
 .banner {
