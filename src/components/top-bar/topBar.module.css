@@ -1,14 +1,28 @@
-.topBar { 
-    display: flex; 
-    justify-content: flex-start;
+.topBar {
+    /* position */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    position: sticky;
+    padding-bottom: 20px;
+
+    /* color */
+    background-color: var(--background-color);
+
+    /* flex */
+    display: flex;
+    justify-content: space-between;
     align-items: flex-end;
     box-sizing: border-box;
     flex-wrap: wrap;
-    flex: 100%; 
+    flex: 100%;
+    
 
-    @media (max-width: 450px) {
+    @media (max-width: 480px) {
         flex: 0 0 50%;
         flex-wrap: wrap;
+        justify-content: center;
 
     }
 }
@@ -16,25 +30,24 @@
 .topLinks {
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     flex-wrap: wrap;
-    flex: 2 2 auto;
-    padding: var(--stdPadding) 0px;
+    flex: 0 0 100%;
 }
 
 .topLink {
     display: flex;
-    flex: 0 0 auto;
-    font-size: 1.5rem;
+    justify-content: center;
+    flex: 0 1 10%;
     padding: var(--stdPadding);
     padding-bottom: 0px;
-    transition: 0.3s;   
-    text-shadow: 2px 2px 0px purple;
+    transition: 0.3s;
+    text-shadow: 2px 2px 0px var(--accent-color-secondary);
 
     &:hover {
         padding-bottom: 3px;
         padding-top: 13px;
-        text-shadow: 2px 2px 1px purple;
+        text-shadow: 2px 2px 1px var(--accent-color-secondary);
     }
 }
 

@@ -1,7 +1,9 @@
+import { useState } from 'react';
+
 // Compontents
 import { TopBar } from './components/top-bar/topBar'
 import { ContentSection } from './components/content-section/ContentSection'
-import { FilledBio } from './components/content-section/bio/bio'
+import { Banner } from './components/banner/Banner'
 import { ScrollingBox } from './components/scrollingBox/ScrollingBox'
 import { PreviousJobs } from './components/previous-job/previousJob'
 import { Educations } from './components/education/education'
@@ -13,39 +15,56 @@ import { useWindowWide } from './lib/hooks/useWindowSize'
 
 // Styles
 import './App.css'
+import ThemeVariablesSheet from './theme/themeVariablesSheet';
+import { createPortal } from 'react-dom';
+// themes
+import { blueTheme } from './theme/themes/blueTheme';
+import { goldTheme } from './theme/themes/goldTheme';
+import { greenTheme } from './theme/themes/greenTheme';
+
 
 function App() {
+
+  const [theme, setTheme] = useState(blueTheme)
 
   // this hook returns true if the window width is greater than the argument.
   // we want mobile, so this is inverted with ! 
   const mobile = !useWindowWide(480);
 
   return (
-    <div className="appWrapper">
-      <TopBar />
+    <>
+      {/* Inserts theme  */}
+      {createPortal(
+        <ThemeVariablesSheet theme={theme} />,
+        document.head)}
+      <div className="appWrapper">
+        <TopBar/>
 
-      <ContentSection heading="Bio">
-        <FilledBio />
-      </ContentSection>
+        <main>
+          <ContentSection banner>
+            <Banner theme={theme} setTheme={setTheme} themes={[blueTheme, goldTheme, greenTheme]} />
+          </ContentSection>
 
-      <ContentSection heading="Work History">
-        <PreviousJobs />
-      </ContentSection>
+          <ContentSection heading={"Projects"} decoration={`${mobile ? "scroll! ->" : ""}`}>
+            <ScrollingBox />
+          </ContentSection>
 
-      <ContentSection heading="Education">
-        <Educations />
-      </ContentSection>
+          <ContentSection heading="Work History">
+            <PreviousJobs />
+          </ContentSection>
 
-      <ContentSection heading={"Projects"} decoration={`${mobile ? "scroll! ->" : ""}`}>
-        <ScrollingBox />
-      </ContentSection>
+          <ContentSection heading="Education">
+            <Educations />
+          </ContentSection>
 
-      <ContentSection heading="Skills">
-        <Skills />
-      </ContentSection>
+          <ContentSection heading="Skills">
+            <Skills />
+          </ContentSection>
 
-      <Footer />
-    </div>
+          <Footer />
+        </main>
+      </div>
+    </>
   )
 }
 
