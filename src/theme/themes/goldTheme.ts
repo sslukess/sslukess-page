@@ -9,7 +9,7 @@ const goldTheme: Theme = {
     colors: {
         backgroundDark: "#ffda85",
         backgroundDarkBanded: "#ffefb2",
-        accentColorPrimary: "#ef8b52",
+        accentColorPrimary: "#00468a",
         accentColorSecondary: "#ffda86",
         accentColorTertiary: "#ffefb2",
         accentColorDark: "#694a11"
@@ -27,7 +27,7 @@ const goldTheme: Theme = {
         lineHeight: 1.5,
         fontWeight: 400,
         colorPrimary: "#202020",
-        colorSecondary: "#202020"
+        colorSecondary: "#ffefb2"
     }
 };
 
