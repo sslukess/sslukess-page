@@ -29,11 +29,6 @@
 
 }
 
-.button {
-    background-color: var(--accent-color-primary);
-    color: black;
-}
-
 .imageWrapper {
     width: 220px;
     align-self: center;
