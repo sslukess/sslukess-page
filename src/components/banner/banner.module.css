@@ -28,7 +28,7 @@
 }
 
 .imageWrapper {
-    width: 170px;
+    width: 220px;
     align-self: center;
 }
 
@@ -36,6 +36,10 @@
     width: 100%;     /* Image will fill the wrapper's width */
     height: 100%;    /* Image will fill the wrapper's height */
     object-fit: cover;  /* Maintain aspect ratio and cover the container */
+
+    /* Makes the box around my head */
+    border-radius: 500px;
+    background: var(--accent-color-primary);
 }
 
 .themeSelector {
