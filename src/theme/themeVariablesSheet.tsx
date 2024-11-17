@@ -11,8 +11,8 @@ function ThemeVariablesSheet( { theme }: { theme: Theme }) {
         --font-family: ${theme.fonts.fontFamily};
         --line-height: ${theme.fonts.lineHeight};
         --font-weight: ${theme.fonts.fontWeight};
-        --color-light: ${theme.fonts.colorLight};
-        --color-dark: ${theme.fonts.colorDark};
+        --color-primary: ${theme.fonts.colorPrimary};
+        --color-secondary: ${theme.fonts.colorSecondary};
         
         /* Colors */
         --background-color: ${theme.colors.backgroundDark};
@@ -20,6 +20,7 @@ function ThemeVariablesSheet( { theme }: { theme: Theme }) {
         --accent-color-primary: ${theme.colors.accentColorPrimary};
         --accent-color-secondary: ${theme.colors.accentColorSecondary};
         --accent-color-tertiary: ${theme.colors.accentColorTertiary};
+        --accent-color-dark: ${theme.colors.accentColorDark};
 
 
         /* Spacing */

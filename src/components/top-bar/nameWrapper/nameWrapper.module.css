@@ -11,7 +11,7 @@
     font-size: 1.5rem;
     padding-left: var(--stdPadding);
 
-    @media (max-width: 450px) {
+    @media (max-width: 480px) {
         padding-left: 0;
 
     }

@@ -2,12 +2,17 @@ import {Theme} from '../ThemeTyping';
 
 const goldTheme: Theme = {
 
+    name: "⭐️",
+
+    themeTint: 'light',
+
     colors: {
         backgroundDark: "#ffda85",
         backgroundDarkBanded: "#ffefb2",
-        accentColorPrimary: "#dark blue",
-        accentColorSecondary: "dark blue",
-        accentColorTertiary: "#d0ac6c"
+        accentColorPrimary: "#ef8b52",
+        accentColorSecondary: "#ffda86",
+        accentColorTertiary: "#ffefb2",
+        accentColorDark: "#694a11"
 
     },
 
@@ -21,8 +26,8 @@ const goldTheme: Theme = {
         fontFamily: "'Roboto Mono', monospace",
         lineHeight: 1.5,
         fontWeight: 400,
-        colorLight: "dark blue",
-        colorDark: "black"
+        colorPrimary: "dark blue",
+        colorSecondary: "dark blue"
     }
 };
 

@@ -19,7 +19,7 @@
     flex: 100%;
     
 
-    @media (max-width: 450px) {
+    @media (max-width: 480px) {
         flex: 0 0 50%;
         flex-wrap: wrap;
         justify-content: center;

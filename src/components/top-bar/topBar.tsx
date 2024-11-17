@@ -1,5 +1,4 @@
 import styles from './topBar.module.css'
-
 import { email } from '../../content/contact'
 
 // Types 
@@ -21,7 +20,7 @@ const linkedInLink: TopLinkData = {
 };
 
 const npmLink: TopLinkData = {
-    display: "NPM", 
+    display: "NPM",
     url: "https://www.npmjs.com/~sslukess"
 }
 
@@ -31,10 +30,10 @@ const emailLink: TopLinkData = {
     target: "_self"
 }
 
-const linkArray = [ linkedInLink, githubLink, npmLink, emailLink];
+const linkArray = [linkedInLink, githubLink, npmLink, emailLink];
 
 
-interface TopLinkProps { 
+interface TopLinkProps {
     link: TopLinkData;
     className?: string;
     target?: string;

@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 // Compontents
 import { TopBar } from './components/top-bar/topBar'
 import { ContentSection } from './components/content-section/ContentSection'
@@ -16,10 +18,12 @@ import './App.css'
 import ThemeVariablesSheet from './theme/themeVariablesSheet';
 import { createPortal } from 'react-dom';
 // themes
-import {blueTheme} from './theme/themes/blueTheme';
-
+import { blueTheme } from './theme/themes/blueTheme';
+import { goldTheme } from './theme/themes/goldTheme';
 
 function App() {
+
+  const [theme, setTheme] = useState(blueTheme)
 
   // this hook returns true if the window width is greater than the argument.
   // we want mobile, so this is inverted with ! 
@@ -29,14 +33,14 @@ function App() {
     <>
       {/* Inserts theme  */}
       {createPortal(
-        <ThemeVariablesSheet theme={blueTheme} />, 
+        <ThemeVariablesSheet theme={theme} />,
         document.head)}
       <div className="appWrapper">
-        <TopBar />
+        <TopBar/>
 
         <main>
           <ContentSection banner>
-            <Banner />
+            <Banner theme={theme} setTheme={setTheme} themes={[blueTheme, goldTheme]} />
           </ContentSection>
 
           <ContentSection heading={"Projects"} decoration={`${mobile ? "scroll! ->" : ""}`}>

@@ -2,12 +2,17 @@ import {Theme} from '../ThemeTyping';
 
 const blueTheme: Theme = {
 
+    name: "🫐",
+    
+    themeTint: 'dark',
+
     colors: {
         backgroundDark: "#171832",
         backgroundDarkBanded: "#1a1b39",
         accentColorPrimary: "#65c696",
         accentColorSecondary: "purple",
-        accentColorTertiary: "#386d9b"
+        accentColorTertiary: "#386d9b",
+        accentColorDark: "#013c6e"
 
     },
 
@@ -21,8 +26,8 @@ const blueTheme: Theme = {
         fontFamily: "'Roboto Mono', monospace",
         lineHeight: 1.5,
         fontWeight: 400,
-        colorLight: "rgba(255, 255, 255, 0.87)",
-        colorDark: "black"
+        colorPrimary: "rgba(255, 255, 255, 0.87)",
+        colorSecondary: "black"
     }
 };
 

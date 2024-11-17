@@ -1,10 +1,13 @@
 interface Theme {
+    name: string;
+    themeTint: 'light' | 'dark';
     colors: {
         backgroundDark: string;
         backgroundDarkBanded: string;
         accentColorPrimary: string;
         accentColorSecondary: string;
         accentColorTertiary: string;
+        accentColorDark: string
     };
     spacing: {
         standardPadding: string;
@@ -15,8 +18,8 @@ interface Theme {
         fontFamily: string;
         lineHeight: number;
         fontWeight: number;
-        colorLight: string;
-        colorDark: string;
+        colorPrimary: string;
+        colorSecondary: string;
     };
 };
 
