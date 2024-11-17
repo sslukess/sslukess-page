@@ -20,6 +20,8 @@ import { createPortal } from 'react-dom';
 // themes
 import { blueTheme } from './theme/themes/blueTheme';
 import { goldTheme } from './theme/themes/goldTheme';
+import { greenTheme } from './theme/themes/greenTheme';
+
 
 function App() {
 
@@ -40,7 +42,7 @@ function App() {
 
         <main>
           <ContentSection banner>
-            <Banner theme={theme} setTheme={setTheme} themes={[blueTheme, goldTheme]} />
+            <Banner theme={theme} setTheme={setTheme} themes={[blueTheme, goldTheme, greenTheme]} />
           </ContentSection>
 
           <ContentSection heading={"Projects"} decoration={`${mobile ? "scroll! ->" : ""}`}>
