@@ -2,7 +2,7 @@ import {Theme} from '../ThemeTyping';
 
 const greenTheme: Theme = {
 
-    name: "🥑",
+    name: "🍉",
     
     themeTint: 'dark',
 
@@ -10,8 +10,8 @@ const greenTheme: Theme = {
         backgroundDark: "#02693b",
         backgroundDarkBanded: "#026f3f",
         accentColorPrimary: "#cacaca",
-        accentColorSecondary: "#963f01",
-        accentColorTertiary: "#963f01",
+        accentColorSecondary: "#ff3b4bba",
+        accentColorTertiary: "palevioletred",
         accentColorDark: "#013c6e"
 
     },
