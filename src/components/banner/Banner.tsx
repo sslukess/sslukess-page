@@ -49,16 +49,13 @@ export function Banner({ theme, setTheme, themes }: BannerProps) {
 
                 {/*  Buttons  */}
                 <div className={styles.buttonWrapper}>
-                    <PButton className={styles.button} action={() => scrollToSection("WorkHistory")}>
-                        Work History
-                    </PButton>
 
                     <PButton className={styles.button} action={() => scrollToSection("Projects")}>
                         Projects
                     </PButton>
 
-                    <PButton className={styles.button} action={() => scrollToSection("Education")}>
-                        Education
+                    <PButton className={styles.button} action={() => scrollToSection("Experience")}>
+                        Experience
                     </PButton>
 
                     <PButton className={styles.button} action={() => scrollToSection("Skills")}>
