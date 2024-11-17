@@ -30,7 +30,13 @@ const emailLink: TopLinkData = {
     target: "_self"
 }
 
-const linkArray = [linkedInLink, githubLink, npmLink, emailLink];
+const resume: TopLinkData = {
+    display: "Resume",
+    url: `/resume.pdf`,
+    target: "_self"
+}
+
+const linkArray = [linkedInLink, githubLink, npmLink, emailLink, resume];
 
 
 interface TopLinkProps {
