@@ -1,5 +1,5 @@
 .bannerWrapper {
-    display: flex; 
+    display: flex;
     flex-flow: column;
     flex: 0 1 80%;
 }
@@ -16,10 +16,17 @@
 }
 
 .buttonWrapper {
-    display: grid; 
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     flex: 0 1 80%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    @media (max-width: 550px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
 }
 
 .button {
@@ -33,9 +40,12 @@
 }
 
 .image {
-    width: 100%;     /* Image will fill the wrapper's width */
-    height: 100%;    /* Image will fill the wrapper's height */
-    object-fit: cover;  /* Maintain aspect ratio and cover the container */
+    width: 100%;
+    /* Image will fill the wrapper's width */
+    height: 100%;
+    /* Image will fill the wrapper's height */
+    object-fit: cover;
+    /* Maintain aspect ratio and cover the container */
 
     /* Makes the box around my head */
     border-radius: 500px;

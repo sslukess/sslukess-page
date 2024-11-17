@@ -5,8 +5,7 @@ import { TopBar } from './components/top-bar/topBar'
 import { ContentSection } from './components/content-section/ContentSection'
 import { Banner } from './components/banner/Banner'
 import { ScrollingBox } from './components/scrollingBox/ScrollingBox'
-import { PreviousJobs } from './components/previous-job/previousJob'
-import { Educations } from './components/education/education'
+import { PreviousExperiences } from './components/previous-experience/previousExperience'
 import { Skills } from './components/skills/Skills'
 import { Footer } from './components/footer/Footer'
 
@@ -49,12 +48,8 @@ function App() {
             <ScrollingBox />
           </ContentSection>
 
-          <ContentSection heading="Work History">
-            <PreviousJobs />
-          </ContentSection>
-
-          <ContentSection heading="Education">
-            <Educations />
+          <ContentSection heading="Experience">
+            <PreviousExperiences />
           </ContentSection>
 
           <ContentSection heading="Skills">
