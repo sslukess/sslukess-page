@@ -4,7 +4,7 @@ const flgDev: IPreviousExperience = {
     type: "Job",
     title: "Software Engineer",
     organisation: "Fitness and Lifestyle Group",
-    yearFrom: "Aug, 2022",
+    yearFrom: "Nov, 2022",
     yearTo: "Feb, 2024",
     location: "Brisbane, Australia",
     description: "After leading product requirements and planning at FLG Digital (see below), I moved to a development role, using my technical skills along side my analytical skills to deliver great solutions within the Scrum team."
@@ -15,7 +15,7 @@ const flgBA: IPreviousExperience = {
     title: "Technical Analyst",
     organisation: "Fitness and Lifestyle Group",
     yearFrom: "Dec, 2021",
-    yearTo: "Aug, 2022",
+    yearTo: "Nov, 2022",
     location: "Brisbane, Australia",
     description: "I joined Fitness and Lifestyle Group as the lead Technical Analyst in their Digital Product team. Leveraging my technical expertise and business stakeholder collaboration skillset, I delivered top-notch digital solutions with the Scrum team."
 };
