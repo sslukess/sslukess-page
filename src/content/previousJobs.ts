@@ -12,7 +12,7 @@ const flgDev: IPreviousExperience = {
 
 const flgBA: IPreviousExperience = {
     type: "Job",
-    title: "Technical Analyst",
+    title: "Technical Business Analyst",
     organisation: "Fitness and Lifestyle Group",
     yearFrom: "Dec, 2021",
     yearTo: "Nov, 2022",
@@ -22,7 +22,7 @@ const flgBA: IPreviousExperience = {
 
 const instandaTechLead: IPreviousExperience = {
     type: "Job",
-    title: "Implementation Lead",
+    title: "Lead Implementation Analyst",
     organisation: "INSTANDA",
     yearFrom: "Nov, 2019",
     yearTo: "Dec, 2021",
@@ -32,7 +32,7 @@ const instandaTechLead: IPreviousExperience = {
 
 const instandaConfigAnalyst: IPreviousExperience = {
     type: "Job",
-    title: "Analyst Engineer",
+    title: "Configuration Business Analyst",
     organisation: "INSTANDA",
     yearFrom: "Aug, 2018",
     yearTo: "Nov, 2019",
@@ -42,7 +42,7 @@ const instandaConfigAnalyst: IPreviousExperience = {
 
 const instandaPreSales: IPreviousExperience = { 
     type: "Job",
-    title: "Sales Engineer",
+    title: "Solutions Engineer (Manager)",
     organisation: "INSTANDA", 
     yearFrom: "March, 2024", 
     yearTo: "Present",
