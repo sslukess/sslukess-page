@@ -34,12 +34,11 @@ export function Banner({ theme, setTheme, themes }: BannerProps) {
         <div className={styles.bannerWrapper}>
             <div className={styles.bannerContent}>
                 {/* Image */}
-                <div className={styles.imageWrapper}>
+                {/* <div className={styles.imageWrapper}>
                     <img className={styles.image} src="/luke.png" />
-                </div>
+                </div> */}
 
                 {/* Name */}
-
                 <h2>Luke Sampson Searle</h2>
 
                 {/* Bio */}
