@@ -42,7 +42,7 @@ const instandaConfigAnalyst: IPreviousExperience = {
 
 const instandaPreSales: IPreviousExperience = { 
     type: "Job",
-    title: "Solutions Engineer (Manager)",
+    title: "Technical Pre-Sales Analyst (Manager)",
     organisation: "INSTANDA", 
     yearFrom: "March, 2024", 
     yearTo: "Present",
